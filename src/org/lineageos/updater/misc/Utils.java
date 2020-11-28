@@ -114,7 +114,7 @@ public class Utils {
     // Open Internet hax: allow updates to newer versions. Stop your blasphemy LineageOS.
     public static boolean canInstall(UpdateBaseInfo update) {
         return (SystemProperties.getBoolean(Constants.PROP_UPDATER_ALLOW_DOWNGRADING, false) ||
-                update.getTimestamp() > SystemProperties.getLong(Constants.PROP_BUILD_DATE, 0)) 
+                update.getTimestamp() > SystemProperties.getLong(Constants.PROP_BUILD_DATE, 0)); 
                 //update.getVersion().equalsIgnoreCase(
                 //        SystemProperties.get(Constants.PROP_BUILD_VERSION));
     }
